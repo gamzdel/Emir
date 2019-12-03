@@ -74,7 +74,7 @@ public class controlFlowEx
 		
 		
 		//switch statements
-		char person = 'P';
+		char person = 'S';
 		
 		switch (person) 
 		{
