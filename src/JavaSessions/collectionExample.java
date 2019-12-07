@@ -78,6 +78,8 @@ public class collectionExample {
 		System.out.println("current size after adding the b " + a.size());
 		
 		
+		System.out.println("returning mutiple strings using arraylist" + arraylistreturn());
+		
 		
 		/*
 		collectionExample o = (collectionExample) a.get(2);
@@ -91,6 +93,16 @@ public class collectionExample {
 	public void test()
 	{
 		System.out.println("This is method in class");
+	}
+	
+	public static ArrayList<String> arraylistreturn()
+	{
+		ArrayList<String> a = new ArrayList<String>();
+		
+		a.add("Lankesh");
+		a.add("Vipin");
+		
+		return a;
 	}
 	
 }
