@@ -64,7 +64,7 @@ public class filesExample {
 		//fr.reset();
 		
 		char[] c = new char[100];
-		int z = fr.read(c);
+		int z = fr.read(c); //read will return the length of the string thats available in file
 		
 		for(int i=0; i<z;i++)
 			System.out.print(c[i]);
