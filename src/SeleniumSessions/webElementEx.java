@@ -12,6 +12,7 @@ public class webElementEx {
 	public static void main(String[] args) throws InterruptedException 
 	{
 	
+		
 		//Launch the browser
 		WebDriver driver = new FirefoxDriver();
 		
@@ -47,7 +48,13 @@ public class webElementEx {
 		System.out.println(forgot.getText());
 		
 		
-		WebElement signIN = driver.findElement(By.className("btn__primary--large"));
+		WebElement signIN;
+		
+		// locator will store the element returned by the static method
+		By locator = By.className("btn__primary--large"); 
+		
+		signIN=driver.findElement(locator); // parameter locator which is of type By
+		
 		signIN.submit();
 		
 		
@@ -61,4 +68,6 @@ public class webElementEx {
 		
 	}
 
+	
+	
 }
