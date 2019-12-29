@@ -2,6 +2,7 @@ package SeleniumSessions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,6 +42,9 @@ public class actionsEx
 		a.perform();
 		
 		
+		Actions action = new Actions(driver);
+		action.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
+	
 		//rightclick on current mouse location
 		//act.contextClick().build().perform();
 		
