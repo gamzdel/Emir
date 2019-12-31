@@ -13,5 +13,14 @@
 	<classpathentry kind="lib" path="Selenium Libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="Selenium Libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="/PageObjectPageFactory/lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Usha Bhat/.m2/repository/org/testng/testng/6.8/testng-6.8.jar" sourcepath="C:/Users/Usha Bhat/.m2/repository/org/testng/testng/6.8/testng-6.8-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="6.8"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
