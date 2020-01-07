@@ -44,8 +44,6 @@ public class student
 		student lankesh = new student(); //lankesh object creation
 		
 		student peter = new student(); //peter object
-		
-	
 	}
 
 }
