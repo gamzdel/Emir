@@ -8,8 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners(Master_Listener.class)
 public class TestTwo
 {
 	@BeforeGroups(groups= {"Regression"})

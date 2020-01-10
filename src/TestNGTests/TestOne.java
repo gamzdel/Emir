@@ -1,7 +1,10 @@
 package TestNGTests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners(TestNGTests.Master_Listener.class)
 public class TestOne
 {
   @Test

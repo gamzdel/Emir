@@ -2,9 +2,6 @@
 <suite parallel="false" name="Suite">
  
 
- 
-
- 
   <test name="Test">
     <classes>
       <class name="TestNGTests.TestTwo"/>
