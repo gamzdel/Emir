@@ -1,10 +1,12 @@
-package PageObject;
+package TestNGTests;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import Utility.locatorUtility;
 
 public class login {
 
