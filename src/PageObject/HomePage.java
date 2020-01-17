@@ -6,16 +6,39 @@ import org.openqa.selenium.WebElement;
 
 public class HomePage {
 
+	static WebDriver driver;
 	static WebElement userID, pwd, signON;
 	
-	public static void username_text(WebDriver driver, String locatorType, String locatorValue)
+	public HomePage(WebDriver driver)
 	{
-		userID = driver.findElement(By.name(locatorValue));
+		this.driver = driver;
 	}
 	
-	public static void pwd_text(WebDriver driver, String locatorType, String locatorValue)
+	public static void username_text( String locatorType, String locatorValue)
 	{
-		pwd = driver.findElement(By.name("password"));
+		userID = driver.findElement(locatorUtility.setlocator(locatorType,locatorValue));
 	}
+	
+	public void userID_EnterText(String text, String locatorType, String locatorValue)
+	{
+		username_text(locatorType, locatorValue);
+		userID.sendKeys(text);
+	}
+	
+	
+	
+	public static void pwd_text( String locatorType, String locatorValue)
+	{
+		pwd = driver.findElement(locatorUtility.setlocator(locatorType,locatorValue));
+	}
+	
+	public void pwd_enterText(String text, String locatorType, String locatorValue)
+	{
+		pwd_text(locatorType, locatorValue);
+		pwd.sendKeys(text);
+	}
+	
+	
+	
 	
 }
