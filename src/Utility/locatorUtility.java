@@ -73,9 +73,10 @@ public class locatorUtility
 			driver = new InternetExplorerDriver();
 			break;
 		case "RWD":
-			URL ur = new URL("https://localhost");
+			URL ur = new URL("http://172.20.10.4:4444/wd/hub");
+			System.out.println("using Remote WebDriver");
 			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setBrowserName(browser);
+			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.WINDOWS);
 			driver = new RemoteWebDriver(ur,cap);
 			break;

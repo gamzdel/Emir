@@ -2,9 +2,13 @@ package TestNGTests;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URL;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import PageObject.HomePage;
 import Utility.locatorUtility;
@@ -13,7 +17,14 @@ public class login {
 
 	public static void main(String[] args) throws IOException
 	{
-		WebDriver driver = locatorUtility.driverSetup("firefox", "http://newtours.demoaut.com/mercurywelcome.php");
+		URL u = new URL("http://172.20.10.4:4444/wd/hub");
+		
+		DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setBrowserName("chrome");
+		cap.setPlatform(Platform.WINDOWS);
+		
+		WebDriver driver = new RemoteWebDriver(u, cap); 
+				//locatorUtility.driverSetup("RWD", "http://newtours.demoaut.com/mercurywelcome.php");
 		
 				
 		//driver.get("http://newtours.demoaut.com/mercurywelcome.php");
